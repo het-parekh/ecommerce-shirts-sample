@@ -1,0 +1,53 @@
+.topNav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding:20px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.topNav>.bag{
+    border-radius: 50%;
+    position:relative;
+
+}
+
+.topNav .bagAlert{
+    position:absolute;
+    border-radius: 50%;
+    background:var(--theme-green);
+    top:28px;
+    right:5px;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1;
+}
+.topNav>.category{
+    padding:8px;
+}
+.topNav .bagIcon{
+    cursor:pointer;
+    padding:8px;
+    border-radius: 50%;
+}
+
+.topNav .bagIcon:hover{
+    box-shadow: 0 0 15px var(--theme-green);
+}
+
+@media (max-width:768px){
+    .topNav{
+        margin-bottom: 0px;
+    }
+
+    .category{
+        display: none;
+    }
+    
+}
+

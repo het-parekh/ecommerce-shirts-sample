@@ -1,0 +1,21 @@
+:root {
+  --slideup:cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  --borderColor:#d9d9d9;
+  --theme-green:#00cc7a;
+  --theme-green-dark:#00b36b;
+  --mute-text:#737373;
+}
+
+.App {
+  text-align: center;
+}
+
+.divider{
+  border-top: 1px solid var(--borderColor);
+}
+
+@media(max-width:768px){
+  .App{
+    overflow-x: hidden;
+  }
+}

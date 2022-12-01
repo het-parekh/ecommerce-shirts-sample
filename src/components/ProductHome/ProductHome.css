@@ -1,0 +1,19 @@
+.productWrapper{
+    display: flex;
+}
+
+.productWrapper .listWrapper{
+    width: 100%;
+}
+
+@media (max-width:768px){
+    .productWrapper{
+        flex-direction: column;
+        gap:30px;
+        width: 100%;
+    }
+    .sortWrapper{
+        margin: auto;
+    }
+
+}

@@ -1,0 +1,103 @@
+.filter{
+    text-align: left;
+    padding: 20px;
+    border:1px solid var(--borderColor);
+    position: sticky;
+    margin-left: 3px;
+    width: 250px;
+}
+
+.filterSearh input{
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.filter ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.filter ul>li{
+  margin-bottom:4px;
+
+}
+
+.filter h4{
+    margin-bottom: 0;
+}
+
+.filter label {
+    position: relative;
+    cursor: pointer;
+    margin-left: -20px;
+    background: #fff;
+    font-weight: 300;
+  }
+  
+  .filter label:before {
+    content:'';
+    background-color: transparent;
+    border: 2px solid var(--theme-green);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 8.5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top:-3px;
+  }
+  
+  .filter input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 7.5px;
+    width: 4px;
+    height: 10px;
+    border: solid var(--theme-green);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    
+  }
+
+  .filter .filterBrands{
+    max-height: 290px;
+    overflow: auto;
+  }
+
+
+
+  /* Scrollbar */
+
+  .filter ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  .filter ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  .filter ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .filter ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+
+  @media (max-width:768px){
+    .filter{
+      width:90vw;
+      margin:auto;
+    }
+  }

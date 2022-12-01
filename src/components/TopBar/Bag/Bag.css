@@ -1,0 +1,81 @@
+.bagContainer{
+    width:300px;
+    position:absolute;
+    top:55px;
+    right:10px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 10px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.bagClosed{
+    max-height: 0px;
+    padding:0px;
+    border:none;
+    box-shadow:none;
+}
+
+.bagOpen{
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+
+.bagContainer>.bagItem{
+    position: relative;
+    display: flex;
+    margin-right: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.bagContainer .bagThumbnail{
+    width: 25%;
+}
+.bagContainer .bagInfo{
+    width: 75%;
+}
+.bagContainer .bagTitle{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.bagContainer .bagTitle>button{
+    margin-top: 2px;
+    background: none;
+    padding: 0;
+    border: none;
+    margin-left: auto;
+    float: right;
+    padding-right: 5px;
+}
+.bagContainer .bagTitle>button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+.bagContainer .bagPrice{
+    text-align: left;
+    color:var(--theme-green-dark);
+    padding:8px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.bagContainer .bagDescription{
+    text-align: left;
+    padding:0 8px 0 8px;
+    opacity: 0.8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bagContainer .bagEmpty{
+    color:var(--mute-text);
+    font-style: italic;
+}
